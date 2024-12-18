@@ -13,7 +13,7 @@ public class APITest {
         .when()
             .post("http://localhost:8080/api/v1/createPrescription")
         .then()
-            .statusCode(200)
+            .statusCode(200) 
             .body("status", equalTo("success"));
     }
 }
